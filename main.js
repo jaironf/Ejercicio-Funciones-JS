@@ -151,5 +151,36 @@ console.log(getPrecioMostrar('hola'));
 
 
 function division(a, b) {
-    
+    return a / b
 }
+console.log(division(45, 3));
+
+
+function filter(array) {
+    let numero = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 5){
+        numero.push(array[i]);    
+    }
+}
+return numero;
+}
+let resultado = filter([2, 4, 8, 5, 3, 7, 1, 0, 10, 15])
+console.log(resultado)
+
+
+let n1 = +prompt('Escribe un número')
+function esPrimo(numerito) {
+    if(numerito <= 1){
+        return false;
+    }
+    for(let i = 2; i < numerito; i++){
+        if(numerito % i === 0){
+            return false;
+        }
+    }
+}
+console.log(esPrimo(25));
+
+
+
