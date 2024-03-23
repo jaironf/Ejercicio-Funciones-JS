@@ -45,7 +45,7 @@ function calculoNotas(nota) {
             break;
     }
 }
-console.log(calculoNotas(0));
+console.log(calculoNotas(7));
 
 
 
@@ -169,18 +169,14 @@ let resultado = filter([2, 4, 8, 5, 3, 7, 1, 0, 10, 15])
 console.log(resultado)
 
 
-let n1 = +prompt('Escribe un número')
-function esPrimo(numerito) {
-    if(numerito <= 1){
-        return false;
-    }
-    for(let i = 2; i < numerito; i++){
-        if(numerito % i === 0){
+
+let primo = +prompt('Escribe un número')
+function esTuPrimo(primo) {
+    for(let i = 2; i < primo; i++){
+        if(primo % i === 0){
             return false;
         }
     }
+    return primo !== 1;
 }
-console.log(esPrimo(25));
-
-
-
+console.log(esTuPrimo(primo))
